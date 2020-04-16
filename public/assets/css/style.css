@@ -514,7 +514,7 @@ section {
   font-weight: 600;
   margin-bottom: 20px;
   padding-bottom: 0;
-  color: #5c768d;
+  color: #F26457;
 }
 
 .section-title p {
@@ -1350,5 +1350,30 @@ section {
   color: #F26457;
   font-family: Raleway;
   font-size: 32px;
+  font-weight:bold;
+}
+
+footer{
+  background-color: #557073;
+  color: white;
+}
+
+.footer-copyright{
+  color: white;
+  text-align: center;
+  margin: auto;
+}
+
+.descriptif{
+  color: #F26457;
+}
+
+.explication{
+  text-align: center !important;
+}
+
+.formulaire{
+  color: #593647 !important;
+  font-family: Raleway;
   font-weight:bold;
 }
