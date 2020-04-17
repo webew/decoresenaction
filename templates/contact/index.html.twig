@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello ContactController!
+{% block title %}Contact
 {% endblock %}
 
 {% block body %}
@@ -31,55 +31,34 @@
 					</div>
 				</div>
 
-				{# <div class="col-lg-12" data-aos="fade-up" data-aos-delay="300">
-							<form action="forms/contact.php" method="post" role="form" class="php-email-form">
-								<div class="form-row">
-								    <div class="col-lg-6 form-group">
-								        <Label class="formulaire">NOM</Label>
-								        <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-								        <div class="validate"></div>
-								      </div>
-								      <div class="col-lg-6 form-group">
-								        <Label class="formulaire">EMAIL</Label>
-								        <input type="email" class="form-control " name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
-								      <div class="validate"></div>
-								                </div>
-								              </div>
-								              <div class="form-group">
-								              <Label class="formulaire">MESSAGE</Label>
-								                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us"></textarea>
-								                <div class="validate"></div>
-								              </div>
-								              <div class="text-center"><button type="submit">Envoyer</button></div>
-								            </form>
-						  </div> #}
-
-				{{form_start(form)}}
 				<div class="col-lg-12" data-aos="fade-up" data-aos-delay="300">
-					<form class="php-email-form">
-						<div class="form-row">
-							<div class="col-lg-6 form-group">
-								{{form_label(form.nom, {'attr': {'class': 'toto'}})}}
-								{{form_widget(form.nom, {'attr': {'class': 'form-control'}})}}
-							</div>
+					{{form_start(form, {'attr': {'class': 'php-email-form'}})}}
 
-							<div class="col-lg-6 form-group">
-								{{form_label(form.email)}}
-								{{form_widget(form.email)}}
-							</div>
-						</div>
-						<div class="form-group">
-							{{form_label(form.message)}}
-							{{form_widget(form.message)}}
+					<div class="form-row">
+						<div class="col-lg-6 form-group">
+							{{form_label(form.nom, 'NOM', {'label_attr': {'class': 'formulaire'}})}}
+							{{form_widget(form.nom, {'attr': {'class': 'form-control'}})}}
+							{# <div class="validate"></div> #}
 						</div>
 
-						<div class="text-center">
-							<button type="submit">Envoyer</button>
+						<div class="col-lg-6 form-group">
+							{{form_label(form.email, 'EMAIL', {'label_attr': {'class': 'formulaire'}})}}
+							{{form_widget(form.email, {'attr': {'class': 'form-control'}})}}
+							{# <div class="validate"></div> #}
 						</div>
-					</form>
+					</div>
+					<div class="form-group">
+						{{form_label(form.message, 'MESSAGE', {'label_attr': {'class': 'formulaire'}})}}
+						{{form_widget(form.message, {'attr': {'class': 'form-control'}})}}
+						{# <div class="validate"></div> #}
+					</div>
+
+					<div class="text-center">
+						<button type="submit">Envoyer</button>
+					</div>
+
+					{{form_end(form)}}
 				</div>
-				{{form_end(form)}}
-
 			</div>
 
 		</div>

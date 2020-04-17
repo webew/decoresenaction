@@ -25,12 +25,14 @@
 	<div class="contact-info float-right">
 		<i class="icofont-envelope"></i>
 		<a href="mailto:decoresenaction@gmail.com">decoresenaction@gmail.com</a>
-		<i class="icofont-phone"></i><a href="tel:+33622691670">06 22 69 16 70</a>
+		<i class="icofont-phone"></i>
+		<a href="tel:+33622691670">06 22 69 16 70</a>
 	</div>
 </div></section><!-- ======= Header ======= --><header id="header">
 <div class="container">
 
-	<div class="logo float-left">{# <h1 class="text-light"><a href="index.html"><span>Mamba</span></a></h1> #}
+	<div class="logo float-left">
+		{# <h1 class="text-light"><a href="index.html"><span>Mamba</span></a></h1> #}
 		<!-- Uncomment below if you prefer to use an image logo -->
 	<img src="assets/images/logo.png" alt="" class="img-fluid"> </a>
 </div>
@@ -44,9 +46,9 @@
 			<a href="{{path('qui_etes_vous') }}">Qui êtes vous ?
 			</a>
 			<ul>
-				<li><a href="{{path('parrain') }}">Parrain</a></li>
-				<li><a href="{{path('candidat') }}">Candidat</a></li>
-				<li><a href="{{path('entreprise') }}">Entreprise</a></li>
+				<li><a href="{{path('parrain')}}">Parrain</a></li>
+				<li><a href="{{path('candidat')}}">Candidat</a></li>
+				<li><a href="{{path('entreprise')}}">Entreprise</a></li>
 			</ul>
 		</li>
 		<li class="drop-down">
@@ -56,19 +58,19 @@
 				<li><a href="{{path('actualites')}}">Actualités</a></li>
 			</ul>
 		</li>
-		<li><a href="{{path('contact') }}">Contact</a></li>
-		{# {% if (app.user.email is defined) %}
-			{# <li class="nav-item">
+		<li>
+			<a href="{{path('contact') }}">Contact</a>
+		</li>
+		{% if (app.user.email is defined) %}
+			<li class="nav-item">
 				<a class="nav-link" href="{{path('app_logout') }}">Déconnexion</a>
-			</li> #}
-		{# {% else %} #}
-			{# <li class="nav-item">
+			</li>
+			#}
+		{% else %}
+			<li class="nav-item">
 				<a class="nav-link" href="{{path('app_login') }}">Connexion</a>
 			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="{{path('app_register') }}">Inscription</a>
-			</li> #}
-		{# {% endif %} #}
+		{% endif %}
 
 
 	</ul>
@@ -86,8 +88,19 @@
 			<div class="carousel-container">
 				<div class="carousel-content container">
 					<h2 class="animated fadeInDown">Informations sur l'accès à l'apprentissage</h2>
-					<p class="animated fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-					<a href="#about" class="btn-get-started animated fadeInUp scrollto">Read More</a>
+					<p class="animated fadeInUp">Il s’agit de se positionner à la liaison entre les différents acteurs pour faciliter la communication sur
+												l’apprentissage et d’en faire connaitre l’opportunité aux jeunes que cela peut intéresser.
+												Grâce à la liaison avec le projet Les jeunes en marche pour l’emploi, il sera possible également de
+												soutenir les jeunes en rupture d’orientation pour les aider à trouver un débouché par
+												l’apprentissage.
+						<br><br>
+						De nombreuses PME souhaitent recruter des apprentis mais la ressource se fait attendre.
+												L’idée est de faire la promotion de l’offre répertoriée au niveau du bassin d’emploi dans les MJC, les
+												mairies, l’université et les associations en jouant le rôle de facilitateur.
+						<br><br>
+						La pertinence de ce projet est totalement avérée suite aux contacts déjà pris avec des organisations
+												professionnelles</p>
+					<a href="{{asset('assets/fichier/Descriptif.pdf')}}" class=" btn-get-started animated fadeInUp scrollto descriptif" target="_blank" class="btn-get-started animated fadeInUp scrollto">Lire la suite</a>
 				</div>
 			</div>
 		</div>
@@ -97,8 +110,11 @@
 			<div class="carousel-container">
 				<div class="carousel-content container">
 					<h2 class="animated fadeInDown">Initiation à la Citoyenneté</h2>
-					<p class="animated fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-					<a href="#about" class="btn-get-started animated fadeInUp scrollto">Read More</a>
+					<p class="animated fadeInUp">Les membres des associations interviennent auprès des jeunes, afin de promouvoir la citoyenneté.
+												Cela peut prendre la forme de présentations dans les établissements de l’éducation nationale, avec
+												l’accord de sa direction, dans les associations ou locaux dédiés à l’activité de la jeunesse, ou de
+												soutien à des projets d’équipes de jeunes.</p>
+					<a href="{{asset('assets/fichier/Descriptif.pdf')}}" class=" btn-get-started animated fadeInUp scrollto descriptif" target="_blank" class="btn-get-started animated fadeInUp scrollto">Lire la suite</a>
 				</div>
 			</div>
 		</div>
@@ -108,8 +124,21 @@
 			<div class="carousel-container">
 				<div class="carousel-content container">
 					<h2 class="animated fadeInDown">Un avenir Ensemble</h2>
-					<p class="animated fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-					<a href="#about" class="btn-get-started animated fadeInUp scrollto">Read More</a>
+					<p class="animated fadeInUp">Le correspondant départemental de la fondation présidée par le Grand Chancelier de la Légion
+												d’honneur anime un réseau de parrains et marraines qui soutiennent des élèves méritants, issus de
+												milieux modestes ou défavorisés afin de les accompagner dans la définition de leurs projets
+												d’orientation et professionnel, mais aussi de les soutenir moralement et matériellement.
+						<br><br>
+						Cette action débute en classe de seconde et se poursuit jusqu’à l’aboutissement des études
+												supérieures.
+						<br><br>
+						Le parrainage peut aussi se traduire par l’octroi de bourses de la Fondation afin de financer l’achat
+												d’un ordinateur, un stage à l’étranger, ou le soutien auprès de banques partenaires pour l’octroi de
+												prêts étudiants.
+						<br><br>
+						La Fondation s’attache à ce que les problèmes financiers ne soient pas un frein aux études.
+												66% des jeunes terminent leurs études au niveau bac+5.</p>
+					<a href="{{asset('assets/fichier/Descriptif.pdf')}}" class=" btn-get-started animated fadeInUp scrollto descriptif" target="_blank" class="btn-get-started animated fadeInUp scrollto">Lire la suite</a>
 				</div>
 			</div>
 		</div>
@@ -119,8 +148,21 @@
 			<div class="carousel-container">
 				<div class="carousel-content container">
 					<h2 class="animated fadeInDown">Les jeunes en marche vers l'emploi</h2>
-					<p class="animated fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
-					<a href="#about" class="btn-get-started animated fadeInUp scrollto">Read More</a>
+					<p class="animated fadeInUp">Le groupe dédié à cette action s’est fixé pour objectif d‘aider à l’insertion professionnelle de 50
+												jeunes/an parmi les 18/30 ans quel que soit le niveau du diplôme obtenu.
+												Il reçoit et guide avec succès les jeunes demandeurs d’emploi ou à la recherche d’un stage de fin
+												d’études.
+						<br><br>
+						Grâce au réseau des décorés, les jeunes sont d’abord reçus en entretien pour connaître leurs
+												aspirations professionnelles puis aidés dans la rédaction du CV et de la lettre de motivation.
+												Ils sont ensuite confiés à un parrain qui va les orienter vers les entreprises qui recrutent grâce à la
+												connaissance du bassin d’emploi.
+						<br><br>
+						Des « entraînements » à l’entretien d’embauche sont également proposés.
+						<br>
+						<br>
+						Tout cet accompagnement débouche sur une insertion professionnelle durable.</p>
+					<a href="{{asset('assets/fichier/Descriptif.pdf')}}" class=" btn-get-started animated fadeInUp scrollto descriptif" target="_blank" class="btn-get-started animated fadeInUp scrollto">Lire la suite</a>
 				</div>
 			</div>
 		</div>

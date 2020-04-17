@@ -1166,15 +1166,15 @@ section {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #428bca;
+  background: #DCF2E8;
   border: 0;
   padding: 10px 24px;
-  color: #fff;
+  color: black;
   transition: 0.4s;
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #6aa3d5;
+  background: #DCF2E8;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1376,4 +1376,26 @@ footer{
   color: #593647 !important;
   font-family: Raleway;
   font-weight:bold;
+}
+
+.btn-valide{
+  background-color: #DCF2E8;
+  text-align: center !important;
+  margin: auto !important;
+  font-family: Roboto;
+}
+
+.right-align{
+  text-align: center;
+  margin: auto;
+}
+
+/*footer */
+
+.smlh {
+  margin-top: 5px;
+}
+.simplon{
+  margin-top: 2px;
+  margin-right: 5px;
 }
